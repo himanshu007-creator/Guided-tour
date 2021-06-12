@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/shepherd.js/dist/css/shepherd.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row hdr">
+            <div class="col-md-3">
+                <h1 align="center">My website</h1>
+            </div>
+            <div class="col-md-6 offset-3" id="nav">
+                <ul >
+                    <li id="home"><a href="#">Home</a></li>
+                    <li id="about"><a href="#">About</a></li>
+                    <li id="projects"><a href="#">Projects</a></li>
+                    <li id="contact"><a href="#">contact</a></li>
+                    <li id="help"><a href="#" onclick="abc()" >help</a></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <aside>
+                    <ul>
+                        <li><a href="#"><span><i class="fa fa-home"></i></span>Home Dashboard</a></li>
+                        <li><a href="#"><span><i class="fas fa-clipboard-list"></i></span></i>Content</a></li>
+                        <li><a href="#"><span><i class="fas fa-bars"></i></span></i>Menus</a></li>
+                        <li><a href="#"><span><i class="fas fa-puzzle-piece"></i></span>Components</a></li>
+                        <li><a href="#"><span><i class="fas fa-users"></i></span>Users</a></li>
+                        <li id="settings"><a href="#"><span><i class="fas fa-wrench"></i></span>System</a></li>
+                        <li><a href="#"><span><i class="fa fa-home"></i></span>Help</a></li>
+                    </ul>  
+                </aside>
+            </div>
+            <div class="col-md-8 txt"></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper-lite.min.js"></script>
+    <script src="./node_modules/shepherd.js/dist/js/shepherd.min.js"></script>
+
+    <!--Shepherd tour instance stored in data.js-->
+    <script src="./data.js"></script>
+    <!--TO BE REPLACED BY tours.json
+    fetch("tours.json")
+.then((res)=>res.json())
+.then((data)=>{
+  const welcome_tour=new Shepherd.Tour(data.tour.configs);
+  data.tour.steps.forEach(element => {
+    welcome_tour.addStep(element);  
+  });
+  fetch("tours.json")
+.then((res)=>res.json())
+.then((data)=>{
+  const welcome_tour=new Shepherd.Tour(data.tour.configs);
+  data.tour.steps.forEach(element => {
+    welcome_tour.addStep(element);  
+  });
+  function gts(){
+    welcome_tour.start();
+    console.log('CLICKED')
+  }
+});
+});
+   -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

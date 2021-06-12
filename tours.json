@@ -1,0 +1,172 @@
+{"tour":{
+  "configs":{
+  "defaultStepOptions":{
+    "classes":"shepherf-theme-arrows",
+    "cancelIcon":{
+      "enabled":true
+    },
+    "scrollTo":{
+      "behavior":"smooth",
+      "block":"center"
+    }
+  }
+},
+  "steps":[
+	  {
+  "title":"Welcome to the website",
+  "text":"lets show you around the town",
+  "attachTo":{
+    "element":".txt",
+    "on":"top-start"
+  },
+  "buttons":[
+    {
+      "action":{},
+      "text":"Next"
+    }
+  ]
+},
+{
+  "title":"Home menu",
+  "text":"Here is the Home menu, you can see your configurations here.",
+  "attachTo":{
+    "element":"#home",
+    "on":"bottom"
+  },
+  "buttons":[
+    {
+      "action":{},
+      "classes":"shepherd-button-warning",
+      "text":"Cancel"
+    },
+    {
+      "action":{},
+      "classes":"shepherd-button-secondary",
+      "text":"Back"
+    },
+    {
+      "action":{},
+      "text":"Next"
+    }
+  ]
+},
+{
+  "title":"About ",
+  "text":"Here you can see information about the organisation",
+  "attachTo":{
+    "element":"#about",
+    "on":"bottom"
+  },
+  "buttons":[
+    {
+      "action":{},
+      "classes":"shepherd-button-warning",
+      "text":"Cancel"
+    },
+    {
+      "action":{},
+      "classes":"shepherd-button-secondary",
+      "text":"Back"
+    },
+    {
+      "action":{},
+      "text":"Next"
+    }
+  ]
+},
+{
+  "title":"Projects ",
+  "text":"Here you can interesting projects being worked upon by us",
+  "attachTo":{
+    "element":"#projects",
+    "on":"bottom"
+  },
+  "buttons":[
+    {
+      "action":{},
+      "classes":"shepherd-button-warning",
+      "text":"Cancel"
+    },
+    {
+      "action":{},
+      "classes":"shepherd-button-secondary",
+      "text":"Back"
+    },
+    {
+      "action":{},
+      "text":"Next"
+    }
+  ]
+},
+{
+  "title":"Contact us ",
+  "text":"Feel like talking? contact us!",
+  "attachTo":{
+    "element":"#contact",
+    "on":"bottom"
+  },
+  "buttons":[
+    {
+      "action":{},
+      "classes":"shepherd-button-warning",
+      "text":"Cancel"
+    },
+    {
+      "action":{},
+      "classes":"shepherd-button-secondary",
+      "text":"Back"
+    },
+    {
+      "action":{},
+      "text":"Next"
+    }
+  ]
+},
+{
+  "title":"Settings",
+  "text":"Configure your setup",
+  "attachTo":{
+    "element":"#settings",
+    "on":"right"
+  },
+  "buttons":[
+    {
+      "action":{},
+      "classes":"shepherd-button-warning",
+      "text":"Cancel"
+    },
+    {
+      "action":{},
+      "classes":"shepherd-button-secondary",
+      "text":"Back"
+    },
+    {
+      "action":{},
+      "text":"Next"
+    }
+  ]
+},
+{
+  "title":"Assistance",
+  "text":"Whenever you need any help, Press me😄",
+  "attachTo":{
+    "element":"#help",
+    "on":"bottom"
+  },
+  "buttons":[
+    {
+      "action":{},
+      "classes":"shepherd-button-secondary",
+      "text":"Back"
+    },
+    {
+      "action":{},
+      "classes":"shepherd-button-warning align-left",
+      "text":"End"
+    }
+  ]
+}	  
+]
+}
+}
+
